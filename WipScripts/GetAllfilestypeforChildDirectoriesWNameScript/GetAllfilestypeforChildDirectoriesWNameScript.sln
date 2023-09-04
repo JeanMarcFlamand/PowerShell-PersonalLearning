@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "GetAllfilestypeforChildDirectoriesWName", "GetAllfilestypeforChildDirectoriesWName\GetAllfilestypeforChildDirectoriesWName.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
 EndProject
+Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PowerShellProject1", "..\PowerShellProject1\PowerShellProject1.pssproj", "{F6167931-5DA4-445E-B2AD-EA269D23CEA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6167931-5DA4-445E-B2AD-EA269D23CEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6167931-5DA4-445E-B2AD-EA269D23CEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6167931-5DA4-445E-B2AD-EA269D23CEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6167931-5DA4-445E-B2AD-EA269D23CEA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
