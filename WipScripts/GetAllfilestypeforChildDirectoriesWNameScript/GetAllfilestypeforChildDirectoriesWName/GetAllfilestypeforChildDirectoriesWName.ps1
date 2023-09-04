@@ -13,7 +13,7 @@ else
     # Traverse through the "wip" directories and check for XLS files
     foreach ($directory in $wipDirectories) {
         $directoryPath = $directory.FullName
-        $xlsFiles = Get-ChildItem -Path $directoryPath -Filter "*.xls" -File
+        $xlsFiles = Get-ChildItem -Path $directoryPath -Filter "*.xlsx" -File
 
         if ($xlsFiles.Count -gt 0) {
             Write-Host "Directory '$directoryPath' contains XLS files:"
@@ -31,6 +31,3 @@ else
     # Complete the progress bar
     Write-Progress -Completed -Status "Completed" -Id 1
 }
-# Prompt the user to press any key to continue and prevent window closure
-Write-Host "Press any key to continue..."
-$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
