@@ -2,11 +2,11 @@
 $drive = "D:\"
 
 # Search for child directories with the name "wip"
-$wipDirectories = Get-ChildItem -Path $drive -Recurse | Where-Object { $_.PSIsContainer -and $_.Name -eq "wip" -and $_.FullName -notlike 'C:\Windows*' }
+$wipDirectories = Get-ChildItem -Path $drive -Recurse -Directory -Depth 4 | Where-Object { $_.PSIsContainer -and $_.Name -eq "wip" -and $_.FullName -notlike 'C:\Windows*' }
 # Check if $wipDirectories is empty or null
 if ($wipDirectories -eq $null -or $wipDirectories.Count -eq 0)
 {
-    Write-Host "No 'wip' directories found that meet the specified criteria."
+    Write-Host "No 'wip' directories found within 4 levels of subfolders from $drive."
 }
 else
 {
