@@ -31,3 +31,6 @@ else
     # Complete the progress bar
     Write-Progress -Completed -Status "Completed" -Id 1
 }
+# Prompt the user to press any key to continue and prevent window closure
+Write-Host "Press any key to continue..."
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
