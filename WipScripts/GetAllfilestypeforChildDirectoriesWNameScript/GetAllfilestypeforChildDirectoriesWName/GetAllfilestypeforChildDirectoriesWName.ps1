@@ -23,5 +23,14 @@ else
         } else {
             Write-Host "Directory '$directoryPath' does not contain any XLS files."
         }
+    # Increment the progress counter and update the progress bar
+        $progressCounter++
+        Write-Progress -PercentComplete (($progressCounter / $totalWipDirectories) * 100) -Status "Progress" -CurrentOperation "Processing" -Id 1
     }
+
+    # Complete the progress bar
+    Write-Progress -Completed -Status "Completed" -Id 1
 }
+# Prompt the user to press any key to continue and prevent window closure
+Write-Host "Press any key to continue..."
+$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
